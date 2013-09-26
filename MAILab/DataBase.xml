@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cpandl.com">>
+  <Subscribers>
+    <Subscriber ID="1" Surname="Иванов" Name="Иван" Patronymic="Иванович">
+      <Address>пр-т Артема 28</Address>
+      <DateOfBirth>15.02.1989</DateOfBirth>
+      <Facilities DiscountPerCent="-2.5"></Facilities>
+      <Debt>58.00</Debt>
+      <MaritalStatus>Single</MaritalStatus>
+      <Childrens>0</Childrens>
+      <Description></Description>
+      <IsAlcoholic>false</IsAlcoholic>
+    </Subscriber>
+    <Subscriber ID="2" Surname="Иванов" Name="Иван" Patronymic="Иванович">
+      <Address>пр-т Чигорина 2</Address>
+      <DateOfBirth>18.12.1979</DateOfBirth>
+      <Facilities DiscountPerCent="-1"></Facilities>
+      <Debt>58.00</Debt>
+      <MaritalStatus>Married</MaritalStatus>
+      <Childrens>1</Childrens>
+      <Description></Description>
+      <IsAlcoholic>false</IsAlcoholic>
+    </Subscriber>
+    <Subscriber ID="3" Surname="Сидоров" Name="Петр" Patronymic="Константинович">
+      <Address>Курская ул., 10</Address>
+      <DateOfBirth>23.6.1988</DateOfBirth>
+      <Facilities DiscountPerCent="0"></Facilities>
+      <Debt>144.00</Debt>
+      <MaritalStatus>Married</MaritalStatus>
+      <Childrens>1</Childrens>
+      <Description></Description>
+      <IsAlcoholic>false</IsAlcoholic>
+    </Subscriber>
+    <Subscriber ID="4" Surname="Коноваров" Name="Артур" Patronymic="Ильич">
+      <Address>вул. Велика Житомирська 1</Address>
+      <DateOfBirth>18.7.1968</DateOfBirth>
+      <Facilities DiscountPerCent="0"></Facilities>
+      <Debt>0.00</Debt>
+      <MaritalStatus>Married</MaritalStatus>
+      <Childrens>2</Childrens>
+      <Description></Description>
+      <IsAlcoholic>false</IsAlcoholic>
+    </Subscriber>
+    <Subscriber ID="5" Surname="Берзин" Name="Николай" Patronymic="Александрович">
+      <Address>Пушкинская ул. 4</Address>
+      <DateOfBirth>1.11.1996</DateOfBirth>
+      <Facilities DiscountPerCent="0"></Facilities>
+      <Debt>8.00</Debt>
+      <MaritalStatus>Married</MaritalStatus>
+      <Childrens>0</Childrens>
+      <Description></Description>
+      <IsAlcoholic>false</IsAlcoholic>
+    </Subscriber>
+    <Subscriber ID="6" Surname="Линин" Name="Александр" Patronymic="Валильевич">
+      <Address>ул. Крещатик, 15</Address>
+      <DateOfBirth>5.06.1978</DateOfBirth>
+      <Facilities DiscountPerCent="-1"></Facilities>
+      <Debt>0.00</Debt>
+      <MaritalStatus>Single</MaritalStatus>
+      <Childrens>1</Childrens>
+      <Description></Description>
+      <IsAlcoholic>true</IsAlcoholic>
+    </Subscriber>
+  </Subscribers>
+</DataBase>

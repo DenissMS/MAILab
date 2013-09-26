@@ -1,7 +1,16 @@
-﻿namespace ZPA_Lab_1
+﻿using System.Xml.Serialization;
+
+namespace MAILab
 {
-    class Facilities
+    public class Facilities
     {
-        public int DiscountPerCent { get; set; }
+        [XmlAttribute]
+        public string DiscountPerCent { get; set; }
+        public string List {get
+        {
+            var list = string.Empty;
+            if (DiscountPerCent != null) list += DiscountPerCent;
+            return list;
+        }}
     }
 }

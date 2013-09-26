@@ -1,9 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System.Xml.Serialization;
 
-namespace ZPA_Lab_1
+namespace MAILab
 {
-    class DataBase
+    [XmlRootAttribute("DataBase", Namespace = "http://www.cpandl.com",
+   IsNullable = false)]
+    public class DataBase
     {
-        public List<Subscriber> Subscribers = new List<Subscriber>();
-    }
+        [XmlArrayAttribute("Subscribers")]
+        public Subscriber[] Subscribers { get; set; }
+    }       
 }

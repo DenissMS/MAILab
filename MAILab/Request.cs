@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Xml.Linq;
 
-namespace ZPA_Lab_1
+namespace MAILab
 {
     class Requests
     {

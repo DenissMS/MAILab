@@ -1,18 +1,26 @@
 ﻿using System;
+using System.Xml.Serialization;
 
-namespace ZPA_Lab_1
+namespace MAILab
 {
-    class Subscriber
+    public class Subscriber
     {
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public string Address { get; set; }
-        public DateTime DateOfBirth { get; set; }
-        public Facilities Facilities { get; set; }
-        public string Debt { get; set; }
-        public MaritalStatus MaritalStatus { get; set; }
-        public int Childrens { get; set; }
-        public string Description { get; set; }
-        public bool IsAlcoholic { get; set; }
+        [XmlAttribute]
+        public string ID;
+        [XmlAttribute]
+        public string Name;
+        [XmlAttribute]
+        public string Surname;
+        [XmlAttribute]
+        public string Patronymic;
+        public string Address;
+        public string DateOfBirth;
+        public Facilities Facilities;
+        public decimal Debt;
+        public MaritalStatus MaritalStatus;
+        public string Childrens;
+        public string Description;
+        public bool IsAlcoholic;
     }
 }
+

@@ -1,8 +1,8 @@
-﻿namespace ZPA_Lab_1
+﻿namespace MAILab
 {
-    enum MaritalStatus
+    public enum MaritalStatus
     {
-        Single,
-        Married
+        Single = 0,
+        Married = 1
     }
 }

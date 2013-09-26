@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace ZPA_Lab_1
+namespace MAILab
 {
     static class Program
     {
