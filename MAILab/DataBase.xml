@@ -51,11 +51,81 @@
       <Description></Description>
       <IsAlcoholic>false</IsAlcoholic>
     </Subscriber>
-    <Subscriber ID="6" Surname="Линин" Name="Александр" Patronymic="Валильевич">
+    <Subscriber ID="6" Surname="Сидоров" Name="Иван" Patronymic="Козлович">
+      <Address>ул. Победы, 15</Address>
+      <DateOfBirth>4.06.1978</DateOfBirth>
+      <Facilities DiscountPerCent="-1"></Facilities>
+      <Debt>0.00</Debt>
+      <MaritalStatus>Single</MaritalStatus>
+      <Childrens>0</Childrens>
+      <Description></Description>
+      <IsAlcoholic>true</IsAlcoholic>
+    </Subscriber>
+      <Subscriber ID="7" Surname="Перевин" Name="Александр" Patronymic="Валерьевич">
       <Address>ул. Крещатик, 15</Address>
       <DateOfBirth>5.06.1978</DateOfBirth>
       <Facilities DiscountPerCent="-1"></Facilities>
+      <Debt>0.04</Debt>
+      <MaritalStatus>Single</MaritalStatus>
+      <Childrens>2</Childrens>
+      <Description></Description>
+      <IsAlcoholic>true</IsAlcoholic>
+    </Subscriber>
+    <Subscriber ID="8" Surname="Васин" Name="Александр" Patronymic="Денисович">
+      <Address>ул. Крещатик, 4</Address>
+      <DateOfBirth>5.06.1978</DateOfBirth>
+      <Facilities DiscountPerCent="-1"></Facilities>
       <Debt>0.00</Debt>
+      <MaritalStatus>Single</MaritalStatus>
+      <Childrens>1</Childrens>
+      <Description></Description>
+      <IsAlcoholic>true</IsAlcoholic>
+    </Subscriber>
+    <Subscriber ID="9" Surname="Копыленко" Name="Александр" Patronymic="Валерьевич">
+      <Address>ул. Крещатик, 4</Address>
+      <DateOfBirth>5.06.1978</DateOfBirth>
+      <Facilities DiscountPerCent="-1"></Facilities>
+      <Debt>0.00</Debt>
+      <MaritalStatus>Single</MaritalStatus>
+      <Childrens>1</Childrens>
+      <Description></Description>
+      <IsAlcoholic>true</IsAlcoholic>
+    </Subscriber>
+    <Subscriber ID="10" Surname="Максимов" Name="Максим" Patronymic="Федорович">
+      <Address>ул. Крещатик, 15</Address>
+      <DateOfBirth>1.08.1990</DateOfBirth>
+      <Facilities DiscountPerCent="-1"></Facilities>
+      <Debt>0.00</Debt>
+      <MaritalStatus>Single</MaritalStatus>
+      <Childrens>1</Childrens>
+      <Description></Description>
+      <IsAlcoholic>true</IsAlcoholic>
+    </Subscriber>
+    <Subscriber ID="11" Surname="Карамзин" Name="Петр" Patronymic="Валильевич">
+      <Address>ул. Петрова, 2</Address>
+      <DateOfBirth>5.06.1978</DateOfBirth>
+      <Facilities DiscountPerCent="-1"></Facilities>
+      <Debt>0.00</Debt>
+      <MaritalStatus>Single</MaritalStatus>
+      <Childrens>1</Childrens>
+      <Description></Description>
+      <IsAlcoholic>true</IsAlcoholic>
+    </Subscriber>
+    <Subscriber ID="12" Surname="Карин" Name="Петр" Patronymic="Бенедиктович">
+      <Address>ул. Попова, 7</Address>
+      <DateOfBirth>5.06.1968</DateOfBirth>
+      <Facilities DiscountPerCent="-1"></Facilities>
+      <Debt>0.56</Debt>
+      <MaritalStatus>Single</MaritalStatus>
+      <Childrens>0</Childrens>
+      <Description></Description>
+      <IsAlcoholic>true</IsAlcoholic>
+    </Subscriber>
+    <Subscriber ID="13" Surname="Линин" Name="Александр" Patronymic="Валильевич">
+      <Address>ул. Крещатик, 15</Address>
+      <DateOfBirth>4.10.1979</DateOfBirth>
+      <Facilities DiscountPerCent="-1"></Facilities>
+      <Debt>0.10</Debt>
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>

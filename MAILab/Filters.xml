@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filters>
+  <Filter ID="Disconnect" Name="Кого отключить?">
+    <Criteria Name="IsAlcoholic" ValueType="Bool"/>
+    <Criteria Name="IsRetirement" ValueType="Bool"/>
+    <Criteria Name="Childrens" ValueType="Int32"/>
+  </Filter>
+</Filters>

@@ -11,7 +11,7 @@ namespace MAILab
         public ATSSubscribersForm()
         {
             InitializeComponent();
-            var requests = new Requests();
+            var requests = new Filters();
             cmbRequests.DataSource = requests.Names;
             var serializer = new XmlSerializer(typeof (DataBase));
             using (var fs = new FileStream("DataBase.xml", FileMode.Open))
