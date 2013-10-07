@@ -1,4 +1,7 @@
-﻿namespace MAILab
+﻿using System.Collections.Generic;
+using System.Windows.Forms;
+
+namespace MAILab
 {
     partial class ATSSubscribersForm
     {
@@ -29,11 +32,9 @@
         private void InitializeComponent()
         {
             this.dgvDataBase = new System.Windows.Forms.DataGridView();
-            this.cmbRequests = new System.Windows.Forms.ComboBox();
+            this.cmbFilters = new System.Windows.Forms.ComboBox();
             this.btnSend = new System.Windows.Forms.Button();
             this.gbRequestParameters = new System.Windows.Forms.GroupBox();
-            this.chbAlcoholics = new System.Windows.Forms.CheckBox();
-            this.chbPensioners = new System.Windows.Forms.CheckBox();
             this.lblRequest = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ФИО = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,7 +47,6 @@
             this.Alcoholic = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Married = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataBase)).BeginInit();
-            this.gbRequestParameters.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvDataBase
@@ -79,13 +79,15 @@
             this.dgvDataBase.Size = new System.Drawing.Size(320, 292);
             this.dgvDataBase.TabIndex = 0;
             // 
-            // cmbRequests
+            // cmbFilters
             // 
-            this.cmbRequests.FormattingEnabled = true;
-            this.cmbRequests.Location = new System.Drawing.Point(59, 17);
-            this.cmbRequests.Name = "cmbRequests";
-            this.cmbRequests.Size = new System.Drawing.Size(131, 21);
-            this.cmbRequests.TabIndex = 1;
+            this.cmbFilters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFilters.FormattingEnabled = true;
+            this.cmbFilters.Location = new System.Drawing.Point(65, 9);
+            this.cmbFilters.Name = "cmbFilters";
+            this.cmbFilters.Size = new System.Drawing.Size(131, 21);
+            this.cmbFilters.TabIndex = 1;
+            this.cmbFilters.SelectedIndexChanged += new System.EventHandler(this.cmbFilters_SelectedIndexChanged);
             // 
             // btnSend
             // 
@@ -99,41 +101,17 @@
             // 
             // gbRequestParameters
             // 
-            this.gbRequestParameters.Controls.Add(this.chbAlcoholics);
-            this.gbRequestParameters.Controls.Add(this.chbPensioners);
-            this.gbRequestParameters.Controls.Add(this.lblRequest);
-            this.gbRequestParameters.Controls.Add(this.cmbRequests);
-            this.gbRequestParameters.Location = new System.Drawing.Point(12, 12);
+            this.gbRequestParameters.Location = new System.Drawing.Point(12, 36);
             this.gbRequestParameters.Name = "gbRequestParameters";
-            this.gbRequestParameters.Size = new System.Drawing.Size(196, 249);
+            this.gbRequestParameters.Size = new System.Drawing.Size(196, 225);
             this.gbRequestParameters.TabIndex = 3;
             this.gbRequestParameters.TabStop = false;
             this.gbRequestParameters.Text = "Параметры запроса";
             // 
-            // chbAlcoholics
-            // 
-            this.chbAlcoholics.AutoSize = true;
-            this.chbAlcoholics.Location = new System.Drawing.Point(9, 79);
-            this.chbAlcoholics.Name = "chbAlcoholics";
-            this.chbAlcoholics.Size = new System.Drawing.Size(86, 17);
-            this.chbAlcoholics.TabIndex = 6;
-            this.chbAlcoholics.Text = "Алкоголики";
-            this.chbAlcoholics.UseVisualStyleBackColor = true;
-            // 
-            // chbPensioners
-            // 
-            this.chbPensioners.AutoSize = true;
-            this.chbPensioners.Location = new System.Drawing.Point(9, 56);
-            this.chbPensioners.Name = "chbPensioners";
-            this.chbPensioners.Size = new System.Drawing.Size(90, 17);
-            this.chbPensioners.TabIndex = 5;
-            this.chbPensioners.Text = "Пенсионеры";
-            this.chbPensioners.UseVisualStyleBackColor = true;
-            // 
             // lblRequest
             // 
             this.lblRequest.AutoSize = true;
-            this.lblRequest.Location = new System.Drawing.Point(6, 20);
+            this.lblRequest.Location = new System.Drawing.Point(12, 12);
             this.lblRequest.Name = "lblRequest";
             this.lblRequest.Size = new System.Drawing.Size(47, 13);
             this.lblRequest.TabIndex = 2;
@@ -215,7 +193,7 @@
             // 
             this.Alcoholic.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.Alcoholic.FillWeight = 1F;
-            this.Alcoholic.HeaderText = "Алкоголик";
+            this.Alcoholic.HeaderText = "Нарушитель";
             this.Alcoholic.Name = "Alcoholic";
             this.Alcoholic.ReadOnly = true;
             this.Alcoholic.Width = 30;
@@ -237,36 +215,36 @@
             this.ClientSize = new System.Drawing.Size(546, 316);
             this.Controls.Add(this.gbRequestParameters);
             this.Controls.Add(this.btnSend);
+            this.Controls.Add(this.cmbFilters);
+            this.Controls.Add(this.lblRequest);
             this.Controls.Add(this.dgvDataBase);
             this.Name = "ATSSubscribersForm";
             this.Text = "Абоненты АТС - Михальченко Денис";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataBase)).EndInit();
-            this.gbRequestParameters.ResumeLayout(false);
-            this.gbRequestParameters.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dgvDataBase;
-        private System.Windows.Forms.ComboBox cmbRequests;
+        private System.Windows.Forms.ComboBox cmbFilters;
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.GroupBox gbRequestParameters;
         private System.Windows.Forms.Label lblRequest;
-        private System.Windows.Forms.CheckBox chbAlcoholics;
-        private System.Windows.Forms.CheckBox chbPensioners;
         private System.Windows.Forms.DataGridViewTextBoxColumn SName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ФИО;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Address;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Birth;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Facilities;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Debt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Childrens;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Desc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Alcoholic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Married;
+        private List<Control> lСriterias = new List<Control>();
+        private DataGridViewTextBoxColumn ID;
+        private DataGridViewTextBoxColumn ФИО;
+        private DataGridViewTextBoxColumn Address;
+        private DataGridViewTextBoxColumn Birth;
+        private DataGridViewTextBoxColumn Facilities;
+        private DataGridViewTextBoxColumn Debt;
+        private DataGridViewTextBoxColumn Childrens;
+        private DataGridViewTextBoxColumn Desc;
+        private DataGridViewTextBoxColumn Alcoholic;
+        private DataGridViewTextBoxColumn Married;
     }
 }
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DataBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cpandl.com">>
+<DataBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cpandl.com">
   <Subscribers>
     <Subscriber ID="1" Surname="Иванов" Name="Иван" Patronymic="Иванович">
       <Address>пр-т Артема 28</Address>
@@ -7,9 +7,9 @@
       <Facilities DiscountPerCent="-2.5"></Facilities>
       <Debt>58.00</Debt>
       <MaritalStatus>Single</MaritalStatus>
-      <Childrens>0</Childrens>
+      <Childrens>1</Childrens>
       <Description></Description>
-      <IsAlcoholic>false</IsAlcoholic>
+      <IsViolator>false</IsViolator>
     </Subscriber>
     <Subscriber ID="2" Surname="Иванов" Name="Иван" Patronymic="Иванович">
       <Address>пр-т Чигорина 2</Address>
@@ -19,7 +19,7 @@
       <MaritalStatus>Married</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
-      <IsAlcoholic>false</IsAlcoholic>
+      <IsViolator>false</IsViolator>
     </Subscriber>
     <Subscriber ID="3" Surname="Сидоров" Name="Петр" Patronymic="Константинович">
       <Address>Курская ул., 10</Address>
@@ -29,7 +29,7 @@
       <MaritalStatus>Married</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
-      <IsAlcoholic>false</IsAlcoholic>
+      <IsViolator>false</IsViolator>
     </Subscriber>
     <Subscriber ID="4" Surname="Коноваров" Name="Артур" Patronymic="Ильич">
       <Address>вул. Велика Житомирська 1</Address>
@@ -39,7 +39,7 @@
       <MaritalStatus>Married</MaritalStatus>
       <Childrens>2</Childrens>
       <Description></Description>
-      <IsAlcoholic>false</IsAlcoholic>
+      <IsViolator>false</IsViolator>
     </Subscriber>
     <Subscriber ID="5" Surname="Берзин" Name="Николай" Patronymic="Александрович">
       <Address>Пушкинская ул. 4</Address>
@@ -49,7 +49,7 @@
       <MaritalStatus>Married</MaritalStatus>
       <Childrens>0</Childrens>
       <Description></Description>
-      <IsAlcoholic>false</IsAlcoholic>
+      <IsViolator>false</IsViolator>
     </Subscriber>
     <Subscriber ID="6" Surname="Сидоров" Name="Иван" Patronymic="Козлович">
       <Address>ул. Победы, 15</Address>
@@ -59,7 +59,7 @@
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>0</Childrens>
       <Description></Description>
-      <IsAlcoholic>true</IsAlcoholic>
+      <IsViolator>true</IsViolator>
     </Subscriber>
       <Subscriber ID="7" Surname="Перевин" Name="Александр" Patronymic="Валерьевич">
       <Address>ул. Крещатик, 15</Address>
@@ -69,7 +69,7 @@
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>2</Childrens>
       <Description></Description>
-      <IsAlcoholic>true</IsAlcoholic>
+      <IsViolator>true</IsViolator>
     </Subscriber>
     <Subscriber ID="8" Surname="Васин" Name="Александр" Patronymic="Денисович">
       <Address>ул. Крещатик, 4</Address>
@@ -79,7 +79,7 @@
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
-      <IsAlcoholic>true</IsAlcoholic>
+      <IsViolator>true</IsViolator>
     </Subscriber>
     <Subscriber ID="9" Surname="Копыленко" Name="Александр" Patronymic="Валерьевич">
       <Address>ул. Крещатик, 4</Address>
@@ -89,7 +89,7 @@
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
-      <IsAlcoholic>true</IsAlcoholic>
+      <IsViolator>true</IsViolator>
     </Subscriber>
     <Subscriber ID="10" Surname="Максимов" Name="Максим" Patronymic="Федорович">
       <Address>ул. Крещатик, 15</Address>
@@ -99,7 +99,7 @@
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
-      <IsAlcoholic>true</IsAlcoholic>
+      <IsViolator>true</IsViolator>
     </Subscriber>
     <Subscriber ID="11" Surname="Карамзин" Name="Петр" Patronymic="Валильевич">
       <Address>ул. Петрова, 2</Address>
@@ -109,7 +109,7 @@
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
-      <IsAlcoholic>true</IsAlcoholic>
+      <IsViolator>true</IsViolator>
     </Subscriber>
     <Subscriber ID="12" Surname="Карин" Name="Петр" Patronymic="Бенедиктович">
       <Address>ул. Попова, 7</Address>
@@ -119,7 +119,7 @@
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>0</Childrens>
       <Description></Description>
-      <IsAlcoholic>true</IsAlcoholic>
+      <IsViolator>true</IsViolator>
     </Subscriber>
     <Subscriber ID="13" Surname="Линин" Name="Александр" Patronymic="Валильевич">
       <Address>ул. Крещатик, 15</Address>
@@ -129,7 +129,7 @@
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
-      <IsAlcoholic>true</IsAlcoholic>
+      <IsViolator>true</IsViolator>
     </Subscriber>
   </Subscribers>
 </DataBase>

@@ -1,7 +1,6 @@
-﻿using System;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
-namespace MAILab
+namespace MAILab.XmlMap
 {
     public class Subscriber
     {
@@ -18,9 +17,8 @@ namespace MAILab
         public Facilities Facilities;
         public decimal Debt;
         public MaritalStatus MaritalStatus;
-        public string Childrens;
+        public int Childrens;
         public string Description;
-        public bool IsAlcoholic;
+        public bool IsViolator;
     }
 }
-

@@ -66,13 +66,22 @@
     <Compile Include="ATSSubscribersForm.Designer.cs">
       <DependentUpon>ATSSubscribersForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Facilities.cs" />
+    <Compile Include="CriteriaType.cs" />
+    <Compile Include="FilterRequest.cs" />
     <Compile Include="MaritalStatus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Filters.cs" />
-    <Compile Include="Subscriber.cs" />
-    <Compile Include="DataBase.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="XmlMap\Criteria.cs" />
+    <Compile Include="XmlMap\Facilities.cs" />
+    <Compile Include="XmlMap\Filter.cs" />
+    <Compile Include="XmlMap\FilterObjectMap.cs" />
+    <Compile Include="XmlMap\Subscriber.cs" />
+    <Compile Include="XmlMap\SubscriberObjectMap.cs" />
     <EmbeddedResource Include="ATSSubscribersForm.resx">
       <DependentUpon>ATSSubscribersForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +95,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -97,8 +111,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Filters.xml">
+    <None Include="Data\Filters.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -114,7 +129,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="DataBase.xml">
+    <None Include="Data\Subscribers.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

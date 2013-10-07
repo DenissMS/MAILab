@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cpandl.com">
+  <Filters>
+    <Filter ID="Disconnect" Name="Кого отключить?">
+      <Criteria ID="IsViolator" Name="Нарушители" Type="Boolean" />
+      <Criteria ID="IsRetirement" Name="На пенсии" Type="Boolean" />
+      <Criteria ID="Childrens" Name="Дети" Type="Integer" />
+    </Filter>
+  </Filters>
+</DataBase>
