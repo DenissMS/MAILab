@@ -14,11 +14,12 @@ namespace MAILab.XmlMap
         public string Patronymic;
         public string Address;
         public string DateOfBirth;
-        public Facilities Facilities;
-        public decimal Debt;
+        public bool Facilities;
+        public bool Debt;
         public MaritalStatus MaritalStatus;
         public int Childrens;
         public string Description;
         public bool IsViolator;
+        public bool IsRetirement;
     }
 }

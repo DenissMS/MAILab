@@ -63,9 +63,10 @@ namespace MAILab
             {
                 dgvDataBase.Rows.Add(s.ID,
                                      string.Format("{0} {1} {2}", s.Surname, s.Name, s.Patronymic),
-                                     s.Address, s.DateOfBirth, s.Facilities.List, s.Debt, s.Childrens, s.Description,
+                                     s.Address, s.DateOfBirth, s.Facilities ?  Resource.Yes: Resource.No, s.Debt?Resource.Yes:Resource.No, s.Childrens, s.Description,
                                      s.IsViolator ? Resource.Yes : Resource.No,
-                                     s.MaritalStatus == MaritalStatus.Married ? Resource.Yes : Resource.No);
+                                     s.MaritalStatus == MaritalStatus.Married ? Resource.Yes : Resource.No,
+                s.IsRetirement ? Resource.Yes : Resource.No);
             }
         }
 
@@ -128,6 +129,7 @@ namespace MAILab
                                 Location = new Point(location.X + label.Size.Width, location.Y),
                                 Name = "nud" + criteria.ID,
                                 Size = new Size(50, 20),
+                                Value = 1
                             };
                         lСriterias.Add(numeric);
                         break;

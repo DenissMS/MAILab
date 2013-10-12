@@ -5,6 +5,8 @@
       <Criteria ID="IsViolator" Name="Нарушители" Type="Boolean" />
       <Criteria ID="IsRetirement" Name="На пенсии" Type="Boolean" />
       <Criteria ID="Childrens" Name="Дети" Type="Integer" />
+      <Criteria ID="Facilities" Name="Льготы" Type="Boolean"/>
+      <Criteria ID="Debt" Name="Долг" Type="Boolean"/>
     </Filter>
   </Filters>
 </DataBase>

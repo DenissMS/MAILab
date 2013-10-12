@@ -4,132 +4,145 @@
     <Subscriber ID="1" Surname="Иванов" Name="Иван" Patronymic="Иванович">
       <Address>пр-т Артема 28</Address>
       <DateOfBirth>15.02.1989</DateOfBirth>
-      <Facilities DiscountPerCent="-2.5"></Facilities>
-      <Debt>58.00</Debt>
+      <Facilities>false</Facilities>
+      <Debt>true</Debt>
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
-      <IsViolator>false</IsViolator>
+      <IsViolator>true</IsViolator>
+      <IsRetirement>false</IsRetirement>
     </Subscriber>
     <Subscriber ID="2" Surname="Иванов" Name="Иван" Patronymic="Иванович">
       <Address>пр-т Чигорина 2</Address>
       <DateOfBirth>18.12.1979</DateOfBirth>
-      <Facilities DiscountPerCent="-1"></Facilities>
-      <Debt>58.00</Debt>
+      <Facilities>false</Facilities>
+      <Debt>true</Debt>
       <MaritalStatus>Married</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
       <IsViolator>false</IsViolator>
+      <IsRetirement>false</IsRetirement>
     </Subscriber>
     <Subscriber ID="3" Surname="Сидоров" Name="Петр" Patronymic="Константинович">
       <Address>Курская ул., 10</Address>
       <DateOfBirth>23.6.1988</DateOfBirth>
-      <Facilities DiscountPerCent="0"></Facilities>
-      <Debt>144.00</Debt>
+      <Facilities>true</Facilities>
+      <Debt>true</Debt>
       <MaritalStatus>Married</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
       <IsViolator>false</IsViolator>
+      <IsRetirement>false</IsRetirement>
     </Subscriber>
     <Subscriber ID="4" Surname="Коноваров" Name="Артур" Patronymic="Ильич">
       <Address>вул. Велика Житомирська 1</Address>
       <DateOfBirth>18.7.1968</DateOfBirth>
-      <Facilities DiscountPerCent="0"></Facilities>
-      <Debt>0.00</Debt>
+      <Facilities>false</Facilities>
+      <Debt>false</Debt>
       <MaritalStatus>Married</MaritalStatus>
       <Childrens>2</Childrens>
       <Description></Description>
       <IsViolator>false</IsViolator>
+      <IsRetirement>false</IsRetirement>
     </Subscriber>
     <Subscriber ID="5" Surname="Берзин" Name="Николай" Patronymic="Александрович">
       <Address>Пушкинская ул. 4</Address>
       <DateOfBirth>1.11.1996</DateOfBirth>
-      <Facilities DiscountPerCent="0"></Facilities>
-      <Debt>8.00</Debt>
+      <Facilities>true</Facilities>
+      <Debt>true</Debt>
       <MaritalStatus>Married</MaritalStatus>
       <Childrens>0</Childrens>
       <Description></Description>
       <IsViolator>false</IsViolator>
+      <IsRetirement>false</IsRetirement>
     </Subscriber>
     <Subscriber ID="6" Surname="Сидоров" Name="Иван" Patronymic="Козлович">
       <Address>ул. Победы, 15</Address>
       <DateOfBirth>4.06.1978</DateOfBirth>
-      <Facilities DiscountPerCent="-1"></Facilities>
-      <Debt>0.00</Debt>
+      <Facilities>false</Facilities>
+      <Debt>false</Debt>
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>0</Childrens>
       <Description></Description>
-      <IsViolator>true</IsViolator>
+      <IsViolator>false</IsViolator>
+      <IsRetirement>false</IsRetirement>
     </Subscriber>
       <Subscriber ID="7" Surname="Перевин" Name="Александр" Patronymic="Валерьевич">
       <Address>ул. Крещатик, 15</Address>
       <DateOfBirth>5.06.1978</DateOfBirth>
-      <Facilities DiscountPerCent="-1"></Facilities>
-      <Debt>0.04</Debt>
+      <Facilities>false</Facilities>
+      <Debt>true</Debt>
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>2</Childrens>
       <Description></Description>
       <IsViolator>true</IsViolator>
+        <IsRetirement>false</IsRetirement>
     </Subscriber>
     <Subscriber ID="8" Surname="Васин" Name="Александр" Patronymic="Денисович">
       <Address>ул. Крещатик, 4</Address>
       <DateOfBirth>5.06.1978</DateOfBirth>
-      <Facilities DiscountPerCent="-1"></Facilities>
-      <Debt>0.00</Debt>
+      <Facilities>true</Facilities>
+      <Debt>false</Debt>
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
-      <IsViolator>true</IsViolator>
+      <IsViolator>false</IsViolator>
+      <IsRetirement>false</IsRetirement>
     </Subscriber>
     <Subscriber ID="9" Surname="Копыленко" Name="Александр" Patronymic="Валерьевич">
       <Address>ул. Крещатик, 4</Address>
       <DateOfBirth>5.06.1978</DateOfBirth>
-      <Facilities DiscountPerCent="-1"></Facilities>
-      <Debt>0.00</Debt>
+      <Facilities>true</Facilities>
+      <Debt>false</Debt>
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
-      <IsViolator>true</IsViolator>
+      <IsViolator>false</IsViolator>
+      <IsRetirement>false</IsRetirement>
     </Subscriber>
     <Subscriber ID="10" Surname="Максимов" Name="Максим" Patronymic="Федорович">
       <Address>ул. Крещатик, 15</Address>
       <DateOfBirth>1.08.1990</DateOfBirth>
-      <Facilities DiscountPerCent="-1"></Facilities>
-      <Debt>0.00</Debt>
+      <Facilities>true</Facilities>
+      <Debt>false</Debt>
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
-      <IsViolator>true</IsViolator>
+      <IsViolator>false</IsViolator>
+      <IsRetirement>false</IsRetirement>
     </Subscriber>
     <Subscriber ID="11" Surname="Карамзин" Name="Петр" Patronymic="Валильевич">
       <Address>ул. Петрова, 2</Address>
       <DateOfBirth>5.06.1978</DateOfBirth>
-      <Facilities DiscountPerCent="-1"></Facilities>
-      <Debt>0.00</Debt>
+      <Facilities>true</Facilities>
+      <Debt>false</Debt>
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
       <IsViolator>true</IsViolator>
+      <IsRetirement>false</IsRetirement>
     </Subscriber>
     <Subscriber ID="12" Surname="Карин" Name="Петр" Patronymic="Бенедиктович">
       <Address>ул. Попова, 7</Address>
-      <DateOfBirth>5.06.1968</DateOfBirth>
-      <Facilities DiscountPerCent="-1"></Facilities>
-      <Debt>0.56</Debt>
+      <DateOfBirth>5.06.1954</DateOfBirth>
+      <Facilities>false</Facilities>
+      <Debt>true</Debt>
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>0</Childrens>
       <Description></Description>
       <IsViolator>true</IsViolator>
+      <IsRetirement>true</IsRetirement>
     </Subscriber>
     <Subscriber ID="13" Surname="Линин" Name="Александр" Patronymic="Валильевич">
       <Address>ул. Крещатик, 15</Address>
-      <DateOfBirth>4.10.1979</DateOfBirth>
-      <Facilities DiscountPerCent="-1"></Facilities>
-      <Debt>0.10</Debt>
+      <DateOfBirth>4.10.1959</DateOfBirth>
+      <Facilities>false</Facilities>
+      <Debt>true</Debt>
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
-      <IsViolator>true</IsViolator>
+      <IsViolator>false</IsViolator>
+      <IsRetirement>true</IsRetirement>
     </Subscriber>
   </Subscribers>
 </DataBase>
