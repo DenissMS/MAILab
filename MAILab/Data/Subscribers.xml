@@ -9,10 +9,10 @@
       <MaritalStatus>Single</MaritalStatus>
       <Childrens>1</Childrens>
       <Description></Description>
-      <IsViolator>true</IsViolator>
+      <IsViolator>false</IsViolator>
       <IsRetirement>false</IsRetirement>
     </Subscriber>
-    <Subscriber ID="2" Surname="Иванов" Name="Иван" Patronymic="Иванович">
+    <Subscriber ID="2" Surname="Прокофьева" Name="Мария" Patronymic="Петровна">
       <Address>пр-т Чигорина 2</Address>
       <DateOfBirth>18.12.1979</DateOfBirth>
       <Facilities>false</Facilities>
@@ -23,7 +23,7 @@
       <IsViolator>false</IsViolator>
       <IsRetirement>false</IsRetirement>
     </Subscriber>
-    <Subscriber ID="3" Surname="Сидоров" Name="Петр" Patronymic="Константинович">
+    <Subscriber ID="3" Surname="Лишунова" Name="Елена" Patronymic="Викторовна">
       <Address>Курская ул., 10</Address>
       <DateOfBirth>23.6.1988</DateOfBirth>
       <Facilities>true</Facilities>
@@ -34,7 +34,7 @@
       <IsViolator>false</IsViolator>
       <IsRetirement>false</IsRetirement>
     </Subscriber>
-    <Subscriber ID="4" Surname="Коноваров" Name="Артур" Patronymic="Ильич">
+    <Subscriber ID="4" Surname="Медик" Name="Наталья" Patronymic="Яковна">
       <Address>вул. Велика Житомирська 1</Address>
       <DateOfBirth>18.7.1968</DateOfBirth>
       <Facilities>false</Facilities>

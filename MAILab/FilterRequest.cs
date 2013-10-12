@@ -31,30 +31,24 @@ namespace MAILab
                                     if ((bool) criteria.Value &&
                                         (bool) typeof (Subscriber).GetField(criteria.ID).GetValue(subscriber))
                                     {
-                                        weed = true;
+                                        weed = !criteria.Exclusion;
                                     }
 
-                                    break;
+                                    continue;
                                 case CriteriaType.Enumeration:
-                                    break;
+                                    continue;
                                 case CriteriaType.Float:
                                 case CriteriaType.Integer:
-                                    if (Convert.ToInt32(criteria.Value) <=
-                                        (int)typeof(Subscriber).GetField(criteria.ID).GetValue(subscriber))
+                                    var num = Convert.ToInt32(criteria.Value);
+                                    if ((int)typeof(Subscriber).GetField(criteria.ID).GetValue(subscriber) >= num && num != 0)
                                     {
-                                        weed = false;
+                                        weed = !criteria.Exclusion;
                                     }
-                                    break;
+                                    continue;
                             }
                         }
 
                         if (weed) list.Add(subscriber);
-                        //var now = DateTime.Now;
-                        //var span = now.AddYears(67) - now;
-                        //if ((DateTime.Parse(subscriber.DateOfBirth) + span) > now)
-                        //{
-                        //    list.Add(subscriber);
-                        //}
                     }
             return list;
         }

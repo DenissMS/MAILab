@@ -2,11 +2,11 @@
 <DataBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cpandl.com">
   <Filters>
     <Filter ID="Disconnect" Name="Кого отключить?">
-      <Criteria ID="IsViolator" Name="Нарушители" Type="Boolean" />
-      <Criteria ID="IsRetirement" Name="На пенсии" Type="Boolean" />
-      <Criteria ID="Childrens" Name="Дети" Type="Integer" />
-      <Criteria ID="Facilities" Name="Льготы" Type="Boolean"/>
-      <Criteria ID="Debt" Name="Долг" Type="Boolean"/>
+      <Criteria ID="IsViolator" Name="Нарушители" Type="Boolean" Exclusion="false" />
+      <Criteria ID="Childrens" Name="Дети" Type="Integer" Exclusion="true" />
+      <Criteria ID="IsRetirement" Name="На пенсии" Type="Boolean" Exclusion="true"/>
+      <Criteria ID="Facilities" Name="Льготы" Type="Boolean" Exclusion="true"/>
+      <Criteria ID="Debt" Name="Долг" Type="Boolean" Exclusion="false"/>
     </Filter>
   </Filters>
 </DataBase>

@@ -32,6 +32,10 @@ namespace MAILab
         private void InitializeComponent()
         {
             this.dgvDataBase = new System.Windows.Forms.DataGridView();
+            this.cmbFilters = new System.Windows.Forms.ComboBox();
+            this.btnSend = new System.Windows.Forms.Button();
+            this.gbRequestParameters = new System.Windows.Forms.GroupBox();
+            this.lblRequest = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ФИО = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,10 +47,6 @@ namespace MAILab
             this.Alcoholic = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Married = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IsRetirement = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cmbFilters = new System.Windows.Forms.ComboBox();
-            this.btnSend = new System.Windows.Forms.Button();
-            this.gbRequestParameters = new System.Windows.Forms.GroupBox();
-            this.lblRequest = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataBase)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,12 +74,50 @@ namespace MAILab
             this.Married,
             this.IsRetirement});
             this.dgvDataBase.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvDataBase.Location = new System.Drawing.Point(214, 12);
+            this.dgvDataBase.Location = new System.Drawing.Point(202, 9);
             this.dgvDataBase.Name = "dgvDataBase";
             this.dgvDataBase.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvDataBase.RowHeadersVisible = false;
-            this.dgvDataBase.Size = new System.Drawing.Size(320, 292);
+            this.dgvDataBase.Size = new System.Drawing.Size(397, 327);
             this.dgvDataBase.TabIndex = 0;
+            // 
+            // cmbFilters
+            // 
+            this.cmbFilters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFilters.FormattingEnabled = true;
+            this.cmbFilters.Location = new System.Drawing.Point(65, 9);
+            this.cmbFilters.Name = "cmbFilters";
+            this.cmbFilters.Size = new System.Drawing.Size(131, 21);
+            this.cmbFilters.TabIndex = 1;
+            this.cmbFilters.SelectedIndexChanged += new System.EventHandler(this.cmbFilters_SelectedIndexChanged);
+            // 
+            // btnSend
+            // 
+            this.btnSend.Location = new System.Drawing.Point(72, 316);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(124, 23);
+            this.btnSend.TabIndex = 2;
+            this.btnSend.Text = "Выполнить запрос";
+            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            // 
+            // gbRequestParameters
+            // 
+            this.gbRequestParameters.Location = new System.Drawing.Point(12, 36);
+            this.gbRequestParameters.Name = "gbRequestParameters";
+            this.gbRequestParameters.Size = new System.Drawing.Size(184, 274);
+            this.gbRequestParameters.TabIndex = 3;
+            this.gbRequestParameters.TabStop = false;
+            this.gbRequestParameters.Text = "Параметры запроса";
+            // 
+            // lblRequest
+            // 
+            this.lblRequest.AutoSize = true;
+            this.lblRequest.Location = new System.Drawing.Point(12, 12);
+            this.lblRequest.Name = "lblRequest";
+            this.lblRequest.Size = new System.Drawing.Size(47, 13);
+            this.lblRequest.TabIndex = 2;
+            this.lblRequest.Text = "Запрос:";
             // 
             // ID
             // 
@@ -106,6 +144,7 @@ namespace MAILab
             this.Address.HeaderText = "Адрес";
             this.Address.Name = "Address";
             this.Address.ReadOnly = true;
+            this.Address.Visible = false;
             this.Address.Width = 60;
             // 
             // Birth
@@ -115,6 +154,7 @@ namespace MAILab
             this.Birth.HeaderText = "Дата рождения";
             this.Birth.Name = "Birth";
             this.Birth.ReadOnly = true;
+            this.Birth.Visible = false;
             this.Birth.Width = 60;
             // 
             // Facilities
@@ -151,6 +191,7 @@ namespace MAILab
             this.Desc.HeaderText = "Дополнительно";
             this.Desc.Name = "Desc";
             this.Desc.ReadOnly = true;
+            this.Desc.Visible = false;
             this.Desc.Width = 70;
             // 
             // Alcoholic
@@ -170,6 +211,7 @@ namespace MAILab
             this.Married.MinimumWidth = 20;
             this.Married.Name = "Married";
             this.Married.ReadOnly = true;
+            this.Married.Visible = false;
             this.Married.Width = 30;
             // 
             // IsRetirement
@@ -178,49 +220,11 @@ namespace MAILab
             this.IsRetirement.Name = "IsRetirement";
             this.IsRetirement.Width = 85;
             // 
-            // cmbFilters
-            // 
-            this.cmbFilters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFilters.FormattingEnabled = true;
-            this.cmbFilters.Location = new System.Drawing.Point(65, 9);
-            this.cmbFilters.Name = "cmbFilters";
-            this.cmbFilters.Size = new System.Drawing.Size(131, 21);
-            this.cmbFilters.TabIndex = 1;
-            this.cmbFilters.SelectedIndexChanged += new System.EventHandler(this.cmbFilters_SelectedIndexChanged);
-            // 
-            // btnSend
-            // 
-            this.btnSend.Location = new System.Drawing.Point(121, 267);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(87, 37);
-            this.btnSend.TabIndex = 2;
-            this.btnSend.Text = "Выполнить запрос";
-            this.btnSend.UseVisualStyleBackColor = true;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
-            // 
-            // gbRequestParameters
-            // 
-            this.gbRequestParameters.Location = new System.Drawing.Point(12, 36);
-            this.gbRequestParameters.Name = "gbRequestParameters";
-            this.gbRequestParameters.Size = new System.Drawing.Size(196, 225);
-            this.gbRequestParameters.TabIndex = 3;
-            this.gbRequestParameters.TabStop = false;
-            this.gbRequestParameters.Text = "Параметры запроса";
-            // 
-            // lblRequest
-            // 
-            this.lblRequest.AutoSize = true;
-            this.lblRequest.Location = new System.Drawing.Point(12, 12);
-            this.lblRequest.Name = "lblRequest";
-            this.lblRequest.Size = new System.Drawing.Size(47, 13);
-            this.lblRequest.TabIndex = 2;
-            this.lblRequest.Text = "Запрос:";
-            // 
             // ATSSubscribersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 316);
+            this.ClientSize = new System.Drawing.Size(615, 351);
             this.Controls.Add(this.gbRequestParameters);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.cmbFilters);

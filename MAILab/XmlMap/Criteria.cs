@@ -10,6 +10,8 @@ namespace MAILab.XmlMap
         public string Name;
         [XmlAttribute]
         public CriteriaType Type;
+        [XmlAttribute]
+        public bool Exclusion;
 
         public object Value;
     }
